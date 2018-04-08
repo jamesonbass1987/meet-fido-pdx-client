@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Image, Item, Popup, Icon, Form } from 'semantic-ui-react';
 import Dropdown from '../UI/FormElements/Dropdown/Dropdown';
-import Button from '../UI/Buttons/Button/Button';
 
 import classes from './Park.css';
 import { bindActionCreators } from 'redux';
@@ -129,7 +128,7 @@ class Park extends Component {
                     <strong>Hours:</strong>{hours}<br />
                     <strong>Visitors:</strong> {userPopups.length !== 0 ? userPopups : 'None yet. Be the first to visit!'}
                 </Item.Extra>
-                <Item.Extra>
+                {/* <Item.Extra>
                     <Form onSubmit={this.handleRatingSubmit}>
                         <Dropdown
                             type='dropdown'
@@ -144,7 +143,7 @@ class Park extends Component {
                         />
                     </Form>
                     {parkRating}
-                </Item.Extra>
+                </Item.Extra> */}
             </Item.Content>
         </Item>
 
