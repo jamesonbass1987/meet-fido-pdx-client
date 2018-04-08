@@ -36,8 +36,8 @@ class ParksIndex extends Component {
                 />
               </Segment>;
     }; 
-    
-    const googleMapUrl = `https://maps.googleapis.com/maps/api/js?key=${ENV['GOOGLE_MAPS_API_KEY']}&v=3.exp&libraries=geometry,drawing,places`
+    console.log(ENV["GOOGLE_MAPS_API_KEY"]);
+    const googleMapUrl = `https://maps.googleapis.com/maps/api/js?key=${ENV["GOOGLE_MAPS_API_KEY"]}&v=3.exp&libraries=geometry,drawing,places`
 
     return <Container className={classes.Container}>
         <PageHeading as="h1" textAlignment="center" iconName="tree" iconColor="green" type="icon" headingText="Search Parks Near You" subheadingText="Find the perfect park for you furry friend." />
