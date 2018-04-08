@@ -1,0 +1,11 @@
+.DogForm {
+    padding: 40px !important;
+}
+
+.InputDropdowns {
+    margin-top: 10px !important;
+}
+
+.InputDropdowns:last-of-type {
+    margin-bottom: 15px !important;
+}

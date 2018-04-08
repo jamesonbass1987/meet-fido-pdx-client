@@ -1,0 +1,8 @@
+.Dog img {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    border-radius: 50% !important;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

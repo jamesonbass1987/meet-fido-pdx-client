@@ -1,0 +1,9 @@
+.Modal {
+    margin-top: 30% !important;
+}
+
+.Modal img {
+    width: 500px !important;
+    height: auto !important;
+    margin: auto !important;
+}

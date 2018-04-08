@@ -1,0 +1,16 @@
+.UsersForm {
+    height: 155px !important;
+    margin-bottom: 0px !important;
+}
+
+.InputDropdowns {
+    margin-bottom: 5px !important;
+}
+
+.InputDropdowns:last-child {
+    margin-bottom: 0px !important;
+}
+
+.Button {
+    width: 80px;
+}

@@ -1,0 +1,29 @@
+.Content h4 {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.Content p {
+    margin-bottom: 10px;
+}
+
+.Content img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.Popup {
+    text-align: center;
+}
+
+.Popup img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.ParkIcon {
+    float: right !important;
+}

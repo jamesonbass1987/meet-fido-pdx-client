@@ -1,0 +1,24 @@
+.HeadingContent {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.HeaderContent {
+    width: 100%;
+    font-size: 60px !important;
+    letter-spacing: 3px !important;
+    font-family: 'Lato', sans-serif !important; 
+    font-weight: bold !important;
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+}
+
+.HeaderSubContent {
+    margin-top: 0px !important;
+}
+
+.Button {
+    margin-top: 15px !important;
+    background-color: rgb(71, 143, 255) !important;
+}
+
