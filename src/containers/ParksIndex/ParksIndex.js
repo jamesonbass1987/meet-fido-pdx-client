@@ -41,7 +41,7 @@ class ParksIndex extends Component {
 
     return <Container className={classes.Container}>
         <PageHeading as="h1" textAlignment="center" iconName="tree" iconColor="green" type="icon" headingText="Search Parks Near You" subheadingText="Find the perfect park for you furry friend." />
-        <MapComponent isMarkerShown googleMapURL loadingElement={<div style={{ height: `100%` }} />} containerElement={<div style={{ height: `400px` }} />} mapElement={<div style={{ height: `100%` }} />} content={this.props.parks} markerClicked={this.handleMarkerClick} filterParams={this.props.parkFilter} />
+        <MapComponent isMarkerShown googleMapURL={googleMapUrl} loadingElement={<div style={{ height: `100%` }} />} containerElement={<div style={{ height: `400px` }} />} mapElement={<div style={{ height: `100%` }} />} content={this.props.parks} markerClicked={this.handleMarkerClick} filterParams={this.props.parkFilter} />
         {parks}
       </Container>;
   };
