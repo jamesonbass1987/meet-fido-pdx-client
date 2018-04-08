@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'http://localhost:3001/api/v1',
+    baseURL: 'http://meet-fido-pdx-api.herokuapp.com',
     headers: { Authorization: localStorage.getItem('token') }
 });
 
