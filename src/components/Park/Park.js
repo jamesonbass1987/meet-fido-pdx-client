@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Image, Item, Popup, Icon, Form } from 'semantic-ui-react';
-import Dropdown from '../UI/FormElements/Dropdown/Dropdown';
+import { Image, Item, Popup, Icon } from 'semantic-ui-react';
 
 import classes from './Park.css';
 import { bindActionCreators } from 'redux';
@@ -102,17 +101,6 @@ class Park extends Component {
             content={this.state.hasCurrentUser ? `Remove ${this.props.park.name} from my favorites` : `Add ${this.props.park.name} to my favorites.`}
             basic
         />;
-
-        const ratingDropdownOptions = [
-            { key: '1', value: 1, text: '1' },
-            { key: '2', value: 2, text: '2' },
-            { key: '3', value: 3, text: '3' },
-            { key: '4', value: 4, text: '4' },
-            { key: '5', value: 5, text: '5' },
-
-        ];
-
-        const parkRating = (this.state.totalRatingCount / this.state.numOfRatings) || 0;
             
         let park = <Item className={classes.Content}>
             <Image className={classes.ParkImage} rounded src={this.props.park.image_url} />
@@ -128,22 +116,6 @@ class Park extends Component {
                     <strong>Hours:</strong>{hours}<br />
                     <strong>Visitors:</strong> {userPopups.length !== 0 ? userPopups : 'None yet. Be the first to visit!'}
                 </Item.Extra>
-                {/* <Item.Extra>
-                    <Form onSubmit={this.handleRatingSubmit}>
-                        <Dropdown
-                            type='dropdown'
-                            options={ratingDropdownOptions}
-                            placeholder="Leave a Rating"
-                            id="ratingDropdown"
-                            onChange={this.handleUpdateRating}
-                            value={this.state.currentRating}
-                        />
-                        <Form.Button
-                            content="Submit"
-                        />
-                    </Form>
-                    {parkRating}
-                </Item.Extra> */}
             </Item.Content>
         </Item>
 
